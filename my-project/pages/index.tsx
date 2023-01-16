@@ -26,7 +26,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="bg-black px-10">
+      <main className="bg-white px-10">
         <section className=" min-h-screen">
           <nav className="py-10 mb-12 flex justify-between">
             <h1 className="text-xl font-burtons">Ameen Mohiyuddin</h1>
@@ -67,7 +67,7 @@ export default function Home() {
             </a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden">
-            <Image src={deved} fill style={{ objectFit: "cover" }} />
+            <Image src={deved} fill style={{ objectFit: "cover" }} alt="image af a man waving"/>
           </div>
         </section>
 
@@ -88,16 +88,16 @@ export default function Home() {
             </p>
           </div>
           <div>
-            <div>
-              <Image src={design} width={100} height={100} />
-              <h3 className="text-lg font-medium pt-8 pb-2">Beautiful Designs</h3>
+            <div className="text-center shadow-lg p-10 rounded-xl my-10">
+              <Image src={design} width={100} height={100} alt="3D design logo" className="mx-auto" />
+              <h3 className="text-lg font-medium pt-8 pb-2">
+                Beautiful Designs
+              </h3>
               <p className="py-2">
                 Creating elegant designs suited for your needs following core
                 design theory.
               </p>
-              <h4 className="py-4 text-teal-600">
-                Design tools I use
-              </h4>
+              <h4 className="py-4 text-teal-600">Design tools I use</h4>
               <p className="text-gray-800 py-1">Photoshop</p>
               <p className="text-gray-800 py-1">Illustrator</p>
               <p className="text-gray-800 py-1">Figma</p>
