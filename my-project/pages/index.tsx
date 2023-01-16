@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
+import { BsFillMoonStarsFill } from 'react-icons/bs';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -14,8 +15,20 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className=" bg-blue-700 min-h-screen">
-        <h1 className="text-3xl font-bold underline">Hello world!</h1>
+
+      <main className=" min-h-screen">
+        <nav>
+          <h1>Ameen Mohiyuddin</h1>
+          <ul>
+            <li>
+            <BsFillMoonStarsFill />
+            </li>
+            <li>
+              <a href="#">Resume</a>
+            </li>
+            <li></li>
+          </ul>
+        </nav>
       </main>
     </>
   );
