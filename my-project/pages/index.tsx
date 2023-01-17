@@ -60,10 +60,10 @@ export default function Home() {
                   >
                     Contact me
                   </a>
-                </li>
-                <li></li>
+                </li>                
               </ul>
             </nav>
+
             <div className="text-center p-10">
               <h2 className="text-5xl py-2 dark:text-gray-200 font-medium md:text-6xl">
                 Ameen Mohiyuddin
@@ -104,7 +104,7 @@ export default function Home() {
                 />
               </a>
             </div>
-            <div className="text-5xl flex justify-center gap-16 py-3 text-teal-600">
+            <div className="text-5xl flex justify-center gap-16 py-5 text-teal-600">
               <a href="https://twitter.com/DevAmeenM">
                 <AiFillTwitterCircle className="cursor-pointer text-5xl" />
               </a>
@@ -117,8 +117,11 @@ export default function Home() {
               <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
                 <AiFillYoutube className="cursor-pointer text-5xl" />
               </a>
-            </div>
-            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            </div>            
+          </section>
+
+          <section id="services">
+          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <Image
                 src={deved}
                 fill
@@ -126,9 +129,6 @@ export default function Home() {
                 alt="image af a man waving"
               />
             </div>
-          </section>
-
-          <section id="services">
             <div>
               <h3 className="text-3xl py-1 md:text-3xl max-w-lg mx-auto dark:text-gray-200">
                 Services I offer
