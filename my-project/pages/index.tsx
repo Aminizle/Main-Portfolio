@@ -3,10 +3,12 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
+import { VscDebugBreakpointLog } from "react-icons/vsc";
 import {
   AiFillTwitterCircle,
   AiFillLinkedin,
   AiFillYoutube,
+  AiFillGithub,
 } from "react-icons/ai";
 import image from "next/image";
 import deved from "../public/dev-ed-wave.png";
@@ -51,7 +53,10 @@ export default function Home() {
                 <li>
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8"
-                    href="#" onClick={() => window.location = 'mailto:AmeenMohiyuddin2022@gmail.com'}
+                    href="#"
+                    onClick={() =>
+                      (window.location = "mailto:AmeenMohiyuddin2022@gmail.com")
+                    }
                   >
                     Contact me
                   </a>
@@ -67,23 +72,29 @@ export default function Home() {
                 Full Stack Web Developer
               </h3>
               <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-              Eager, self-taught full stack web developer with over 9 years of demonstrated experience working in the computer software industry. And a proven track record of creating and implementing successful front and back-end web applications. 
-              <br />
-              <br />
-              Skilled in JavaScript/Typescript, HTML, CSS/Tailwind CSS/Bootstrap, Next.js/React.js, Node.js, MongoDB/PostgreSQL.
-              <br />
-              <br />
-               Strong engineering professional who loves solving problems and building solutions
+                Eager, self-taught full stack web developer with over 9 years of
+                demonstrated experience working in the computer software
+                industry. And a proven track record of creating and implementing
+                successful front and back-end web applications.
+                <VscDebugBreakpointLog className="mx-auto" />
+                Skilled in JavaScript/Typescript, HTML, CSS/Tailwind
+                CSS/Bootstrap, Next.js/React.js, Node.js, MongoDB/PostgreSQL.
+                <VscDebugBreakpointLog className="mx-auto" />
+                Strong engineering professional who loves solving problems and
+                building solutions.
               </p>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-              <a href="#">
+              <a href="https://twitter.com/DevAmeenM">
                 <AiFillTwitterCircle className="cursor-pointer text-5xl" />
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/ameen-mohiyuddin/">
                 <AiFillLinkedin className=" cursor-pointer text-5xl" />
               </a>
-              <a href="#">
+              <a href="https://github.com/Aminizle">
+                <AiFillGithub className=" cursor-pointer text-5xl" />
+              </a>
+              <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
                 <AiFillYoutube className="cursor-pointer text-5xl" />
               </a>
             </div>
