@@ -11,7 +11,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 import image from "next/image";
-import deved from "../public/dev-ed-wave.png";
+import deved from "../public/logo.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
 import consulting from "../public/consulting.png";
@@ -38,8 +38,8 @@ export default function Home() {
         </Head>
 
         <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
-          <section className=" min-h-screen" id="landing">
-            <nav className="py-10 mb-12 flex justify-between">
+          <section className="min-h-screen" id="landing">
+            <nav className="py-10 mb-2 flex justify-between">
               <h1 className="text-xl font-burtons dark:text-gray-200">
                 Dev Ameen
               </h1>
@@ -71,11 +71,11 @@ export default function Home() {
               <h3 className="text-2xl py-2 md:text-3xl text-teal-600">
                 Full Stack Web Developer
               </h3>
-              <p className="text-md py-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
+              <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
                 Eager, self-taught full stack web developer with over 9 years of
                 demonstrated experience working in the computer software
                 industry. And a proven track record of creating and implementing
-                successful front and back-end web applications.              
+                successful front and back-end web applications.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
                 Skilled in JavaScript/Typescript, HTML, CSS/Tailwind
                 CSS/Bootstrap, Next.js/React.js, Node.js, MongoDB/PostgreSQL.
@@ -83,6 +83,26 @@ export default function Home() {
                 Strong engineering professional who loves solving problems and
                 building solutions.
               </p>
+            </div>
+            <div>
+              <h2 className="flex justify-center dark:text-gray-200">
+                <a
+                  target="_blank"
+                  href="https://www.codewars.com/users/DevAmeenM"
+                >
+                  Code Wars Badge
+                </a>
+              </h2>
+              <a
+                className="flex justify-center"
+                target="_blank"
+                href="https://www.codewars.com/users/DevAmeenM"
+              >
+                <img
+                  src="https://www.codewars.com/users/DevAmeenM/badges/large"
+                  alt="codewars badge large"
+                />
+              </a>
             </div>
             <div className="text-5xl flex justify-center gap-16 py-3 text-teal-600">
               <a href="https://twitter.com/DevAmeenM">
