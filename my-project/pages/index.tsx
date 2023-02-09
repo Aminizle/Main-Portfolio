@@ -78,7 +78,7 @@ export default function Home() {
                 experience in the software industry, I have a passion for
                 creating and implementing successful front-end and back-end web
                 applications. My eagerness to learn and proven track record
-                demonstrate my commitment to delivering high-quality results and
+                demonstrates my commitment to delivering high-quality results and
                 exceeding expectations.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
                 Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
