@@ -48,12 +48,12 @@ export default function Home() {
                 <li>
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl"
+                    className="cursor-pointer text-2xl hover:scale-110"
                   />
                 </li>
                 <li>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8"
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8 hover:scale-110"
                     href="#"
                     onClick={() =>
                       (window.location.href =
