@@ -37,11 +37,11 @@ export default function Home() {
           <link rel="icon" href="/afavicon.ico" />
         </Head>
 
-        <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+        <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
           <section className="min-h-screen" id="landing">
             <nav className="py-10 mb-2 flex justify-between">
               <h1 className="text-xl font-burtons dark:text-gray-200">
-                Dev Ameen
+              {'<Dev Ameen />'}
               </h1>
               <ul className="flex items-center dark:text-gray-200">
                 <li>
@@ -55,33 +55,26 @@ export default function Home() {
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8"
                     href="#"
                     onClick={() =>
-                      (window.location = "mailto:AmeenMohiyuddin2022@gmail.com")
+                      (window.location.href = "mailto:AmeenMohiyuddin2022@gmail.com")
                     }
                   >
                     Contact me
                   </a>
-                </li>                
+                </li>
               </ul>
             </nav>
 
             <div className="text-center p-10">
-              <h2 className="text-5xl py-2 dark:text-gray-200 font-medium md:text-6xl">
+              <h2 className="text-5xl py-2 dark:text-gray-200 font-medium md:text-6xl underline">
                 Ameen Mohiyuddin
               </h2>
               <h3 className="text-2xl py-2 md:text-3xl text-teal-600">
                 Full Stack Web Developer
               </h3>
               <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-                Eager, self-taught full stack web developer with over 9 years of
-                demonstrated experience working in the computer software
-                industry. And a proven track record of creating and implementing
-                successful front and back-end web applications.
+              As a self-taught full stack web developer with 9 years of experience in the software industry, I have a passion for creating and implementing successful front-end and back-end web applications. My eagerness to learn and proven track record demonstrate my commitment to delivering high-quality results and exceeding expectations.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
-                Skilled in JavaScript/Typescript, HTML, CSS/Tailwind
-                CSS/Bootstrap, Next.js/React.js, Node.js, MongoDB/PostgreSQL.
-                <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
-                Strong engineering professional who loves solving problems and
-                building solutions.
+                Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind CSS/Bootstrap, Next.js/React.js, Node.js, and MongoDB/PostgreSQL, offering a wide range of technical knowledge for robust and scalable solutions.               
               </p>
             </div>
             <div>
@@ -117,11 +110,11 @@ export default function Home() {
               <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
                 <AiFillYoutube className="cursor-pointer text-5xl" />
               </a>
-            </div>            
+            </div>
           </section>
 
           <section id="services">
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
+            <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
               <Image
                 src={deved}
                 fill
