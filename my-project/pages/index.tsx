@@ -73,7 +73,7 @@ export default function Home() {
               <h3 className="text-2xl py-2 md:text-3xl text-teal-600">
                 Full Stack Web Developer
               </h3>
-              <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
+              <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500 transition-opacity ease-in duration-700 opacity-100">
                 As a self-taught full stack web developer with 9 years of
                 experience in the software industry, I have a passion for
                 creating and implementing successful front-end and back-end web
@@ -88,18 +88,18 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-5xl flex justify-center gap-16 mb-6 text-teal-600">
+            <div className="text-5xl flex justify-center gap-16 mb-6 text-teal-600 ">
               <a href="https://twitter.com/DevAmeenM">
-                <AiFillTwitterCircle className="cursor-pointer text-5xl" />
+                <AiFillTwitterCircle className="cursor-pointer text-5xl hover:scale-110" />
               </a>
               <a href="https://www.linkedin.com/in/ameen-mohiyuddin/">
-                <AiFillLinkedin className=" cursor-pointer text-5xl" />
+                <AiFillLinkedin className=" cursor-pointer text-5xl hover:scale-110" />
               </a>
               <a href="https://github.com/Aminizle">
-                <AiFillGithub className=" cursor-pointer text-5xl" />
+                <AiFillGithub className=" cursor-pointer text-5xl hover:scale-110" />
               </a>
               <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
-                <AiFillYoutube className="cursor-pointer text-5xl" />
+                <AiFillYoutube className="cursor-pointer text-5xl hover:scale-110" />
               </a>
             </div>
             <div>
@@ -110,7 +110,7 @@ export default function Home() {
                 ></a>
               </h2>
               <a
-                className="flex justify-center"
+                className="flex justify-center hover:scale-110"
                 target="_blank"
                 href="https://www.codewars.com/users/DevAmeenM"
               >
