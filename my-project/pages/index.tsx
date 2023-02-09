@@ -10,6 +10,7 @@ import {
   AiFillYoutube,
   AiFillGithub,
 } from "react-icons/ai";
+import { SiCodewars } from "react-icons/si";
 import image from "next/image";
 import deved from "../public/logo.png";
 import design from "../public/design.png";
@@ -41,7 +42,7 @@ export default function Home() {
           <section className="min-h-screen" id="landing">
             <nav className="py-10 mb-2 flex justify-between">
               <h1 className="text-xl font-burtons dark:text-gray-200">
-              {'<Dev Ameen />'}
+                {"<Dev Ameen />"}
               </h1>
               <ul className="flex items-center dark:text-gray-200">
                 <li>
@@ -55,7 +56,8 @@ export default function Home() {
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8"
                     href="#"
                     onClick={() =>
-                      (window.location.href = "mailto:AmeenMohiyuddin2022@gmail.com")
+                      (window.location.href =
+                        "mailto:AmeenMohiyuddin2022@gmail.com")
                     }
                   >
                     Contact me
@@ -72,32 +74,21 @@ export default function Home() {
                 Full Stack Web Developer
               </h3>
               <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500">
-              As a self-taught full stack web developer with 9 years of experience in the software industry, I have a passion for creating and implementing successful front-end and back-end web applications. My eagerness to learn and proven track record demonstrate my commitment to delivering high-quality results and exceeding expectations.
+                As a self-taught full stack web developer with 9 years of
+                experience in the software industry, I have a passion for
+                creating and implementing successful front-end and back-end web
+                applications. My eagerness to learn and proven track record
+                demonstrate my commitment to delivering high-quality results and
+                exceeding expectations.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
-                Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind CSS/Bootstrap, Next.js/React.js, Node.js, and MongoDB/PostgreSQL, offering a wide range of technical knowledge for robust and scalable solutions.               
+                Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
+                CSS/Bootstrap, Next.js/React.js, Node.js, and
+                MongoDB/PostgreSQL, offering a wide range of technical knowledge
+                for robust and scalable solutions.
               </p>
             </div>
-            <div>
-              <h2 className="flex justify-center dark:text-gray-200">
-                <a
-                  target="_blank"
-                  href="https://www.codewars.com/users/DevAmeenM"
-                >
-                  Code Wars Badge
-                </a>
-              </h2>
-              <a
-                className="flex justify-center"
-                target="_blank"
-                href="https://www.codewars.com/users/DevAmeenM"
-              >
-                <img
-                  src="https://www.codewars.com/users/DevAmeenM/badges/large"
-                  alt="codewars badge large"
-                />
-              </a>
-            </div>
-            <div className="text-5xl flex justify-center gap-16 py-5 text-teal-600">
+
+            <div className="text-5xl flex justify-center gap-16 mb-6 text-teal-600">
               <a href="https://twitter.com/DevAmeenM">
                 <AiFillTwitterCircle className="cursor-pointer text-5xl" />
               </a>
@@ -109,6 +100,24 @@ export default function Home() {
               </a>
               <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
                 <AiFillYoutube className="cursor-pointer text-5xl" />
+              </a>
+            </div>
+            <div>
+              <h2 className="flex justify-center dark:text-gray-200 ">
+                <a
+                  target="_blank"
+                  href="https://www.codewars.com/users/DevAmeenM"
+                ></a>
+              </h2>
+              <a
+                className="flex justify-center"
+                target="_blank"
+                href="https://www.codewars.com/users/DevAmeenM"
+              >
+                <img
+                  src="https://www.codewars.com/users/DevAmeenM/badges/large"
+                  alt="codewars badge large"
+                />
               </a>
             </div>
           </section>
