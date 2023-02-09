@@ -4,13 +4,6 @@ import { Inter } from "@next/font/google";
 import styles from "@/styles/Home.module.css";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
-import {
-  AiFillTwitterCircle,
-  AiFillLinkedin,
-  AiFillYoutube,
-  AiFillGithub,
-} from "react-icons/ai";
-import { SiCodewars } from "react-icons/si";
 import image from "next/image";
 import deved from "../public/logo.png";
 import design from "../public/design.png";
@@ -22,6 +15,7 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
+import FooterMenu from "pages/FooterMenu";
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -48,16 +42,15 @@ export default function Home() {
                 <li>
                   <BsFillMoonStarsFill
                     onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl hover:scale-110"
+                    className="cursor-pointer text-2xl hover:scale-125"
                   />
                 </li>
                 <li>
                   <a
-                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8 hover:scale-110"
+                    className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8 hover:scale-125"
                     href="#"
                     onClick={() =>
-                      (window.location.href =
-                        "mailto:AmeenMohiyuddin2022@gmail.com")
+                      (window.location.href="mailto:AmeenMohiyuddin2022@gmail.com")
                     }
                   >
                     Contact me
@@ -88,38 +81,6 @@ export default function Home() {
               </p>
             </div>
 
-            <div className="text-5xl flex justify-center gap-16 mb-6 text-teal-600 ">
-              <a href="https://twitter.com/DevAmeenM">
-                <AiFillTwitterCircle className="cursor-pointer text-5xl hover:scale-110" />
-              </a>
-              <a href="https://www.linkedin.com/in/ameen-mohiyuddin/">
-                <AiFillLinkedin className=" cursor-pointer text-5xl hover:scale-110" />
-              </a>
-              <a href="https://github.com/Aminizle">
-                <AiFillGithub className=" cursor-pointer text-5xl hover:scale-110" />
-              </a>
-              <a href="https://www.youtube.com/channel/UCtnzaJeLTPhhH6jolpdGhpw">
-                <AiFillYoutube className="cursor-pointer text-5xl hover:scale-110" />
-              </a>
-            </div>
-            <div>
-              <h2 className="flex justify-center dark:text-gray-200 ">
-                <a
-                  target="_blank"
-                  href="https://www.codewars.com/users/DevAmeenM"
-                ></a>
-              </h2>
-              <a
-                className="flex justify-center hover:scale-110"
-                target="_blank"
-                href="https://www.codewars.com/users/DevAmeenM"
-              >
-                <img
-                  src="https://www.codewars.com/users/DevAmeenM/badges/large"
-                  alt="codewars badge large"
-                />
-              </a>
-            </div>
           </section>
 
           <section id="services">
@@ -297,6 +258,7 @@ export default function Home() {
             </div>
           </section>
         </main>
+        <FooterMenu />
       </div>
     </>
   );
