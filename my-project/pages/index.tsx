@@ -15,7 +15,9 @@ import web3 from "../public/web3.png";
 import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
-import FooterMenu from "pages/FooterMenu";
+import FooterMenu from "components/FooterMenu";
+import Navbar from "components/HeaderMenu";
+
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,29 +36,50 @@ export default function Home() {
 
         <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
           <section className="min-h-screen" id="landing">
-            <nav className="py-10 mb-2 flex justify-between">
-              <h1 className="text-xl font-burtons dark:text-gray-200">
-                {"<Dev Ameen />"}
-              </h1>
-              <ul className="flex items-center dark:text-gray-200">
-                <li>
-                  <BsFillMoonStarsFill
-                    onClick={() => setDarkMode(!darkMode)}
-                    className="cursor-pointer text-2xl hover:scale-125"
-                  />
-                </li>
+            
+            <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500">
+              <div className="flex dark:text-gray-200 ">
+                <BsFillMoonStarsFill
+                  onClick={() => setDarkMode(!darkMode)}
+                  className="cursor-pointer text-2xl hover:scale-125 mx-4"
+                />
+                <h1 className="text-xl font-burtons dark:text-gray-200 font-semibold tracking-tight">
+                  {"<Dev Ameen />"}
+                </h1>
+              </div>
+
+              <ul className="flex items-center dark:text-gray-200 md:collapse lg:visible">
+                <li>Projects</li>
+                <li>Github</li>
+                <li>LinkedIn</li>
+                <li>Twitter</li>
+                <li>CodeWars</li>
                 <li>
                   <a
                     className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8 hover:scale-125"
                     href="#"
                     onClick={() =>
-                      (window.location.href="mailto:AmeenMohiyuddin2022@gmail.com")
+                      (window.location.href =
+                        "mailto:AmeenMohiyuddin2022@gmail.com")
                     }
                   >
                     Contact me
                   </a>
                 </li>
               </ul>
+
+              <div className="lg:hidden">
+                <button className="mx-6 px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white">
+                  <svg
+                    className="fill-current h-3 w-3"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Menu</title>
+                    <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+                  </svg>
+                </button>
+              </div>
             </nav>
 
             <div className="text-center p-10">
@@ -71,8 +94,8 @@ export default function Home() {
                 experience in the software industry, I have a passion for
                 creating and implementing successful front-end and back-end web
                 applications. My eagerness to learn and proven track record
-                demonstrates my commitment to delivering high-quality results and
-                exceeding expectations.
+                demonstrates my commitment to delivering high-quality results
+                and exceeding expectations.
                 <VscDebugBreakpointLog className="my-2 mx-auto text-teal-600" />
                 Skilled in JavaScript/TypeScript, HTML, CSS/Tailwind
                 CSS/Bootstrap, Next.js/React.js, Node.js, and
@@ -80,7 +103,6 @@ export default function Home() {
                 for robust and scalable solutions.
               </p>
             </div>
-
           </section>
 
           <section id="services">
