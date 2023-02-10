@@ -1,10 +1,10 @@
 import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
+
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { VscDebugBreakpointLog } from "react-icons/vsc";
-import image from "next/image";
+
 import deved from "../public/logo.png";
 import design from "../public/design.png";
 import code from "../public/code.png";
@@ -16,7 +16,6 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import FooterMenu from "components/FooterMenu";
-import Navbar from "components/HeaderMenu";
 
 import { useState } from "react";
 
@@ -36,7 +35,6 @@ export default function Home() {
 
         <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
           <section className="min-h-screen" id="landing">
-            
             <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500">
               <div className="flex dark:text-gray-200 ">
                 <BsFillMoonStarsFill
