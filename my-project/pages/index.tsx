@@ -16,7 +16,8 @@ import web4 from "../public/web4.png";
 import web5 from "../public/web5.png";
 import web6 from "../public/web6.png";
 import FooterMenu from "components/FooterMenu";
-
+import OpenPdfButton from "components/ResumeButton";
+import { Button } from "@material-tailwind/react";
 import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -34,6 +35,8 @@ export default function Home() {
         </Head>
 
         <main className="bg-slate-100 px-10 md:px-20 lg:px-40 dark:bg-gray-900">
+          {/* landing */}
+
           <section className="min-h-screen" id="landing">
             <nav className="py-5 mb-2 flex justify-between bg-gradient-to-l from-cyan-500 to-teal-500">
               <div className="flex dark:text-gray-200 ">
@@ -79,7 +82,6 @@ export default function Home() {
                 </button>
               </div>
             </nav>
-
             <div className="text-center p-10">
               <h2 className="text-5xl py-2 dark:text-gray-200 font-medium md:text-6xl underline">
                 Ameen Mohiyuddin
@@ -88,8 +90,8 @@ export default function Home() {
                 Full Stack Web Developer
               </h3>
               <p className="text-md pt-5 leading-8 text-gray-800 md:text-xl max-w-lg mx-auto dark:text-gray-500 transition-opacity ease-in duration-700 opacity-100">
-                As a self-taught full stack web developer with 9 years of
-                experience in the software industry, I have a passion for
+                I am a full stack web developer with a solid background in
+                software quality assurance and automation. I have a passion for
                 creating and implementing successful front-end and back-end web
                 applications. My eagerness to learn and proven track record
                 demonstrates my commitment to delivering high-quality results
@@ -100,8 +102,21 @@ export default function Home() {
                 MongoDB/PostgreSQL, offering a wide range of technical knowledge
                 for robust and scalable solutions.
               </p>
+
+              <Button className="bg-gradient-to-r from-cyan-500 to-teal-500 text-wide px-4 py-2 rounded-md ml-8" 
+                    onClick={() => {
+                      window.open("../public/web6.png", '_blank');
+                        
+                    }}>Resume</Button>
             </div>
+                    <OpenPdfButton />
+            <a href="my-project/public/Resume.pdf">
+              Resume
+            </a>
+            
           </section>
+
+          {/* Services */}
 
           <section id="services">
             <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96">
@@ -130,7 +145,6 @@ export default function Home() {
               </p>
             </div>
             <div className="lg:flex gap-10">
-              {/* card - design */}
               <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-gray-200">
                 <Image
                   src={design}
@@ -196,7 +210,9 @@ export default function Home() {
             </div>
           </section>
 
-          <section>
+          {/* Projects */}
+
+          <section id="Projects">
             <div>
               <h3 className="text-3xl py-1 md:text-4xl max-w-lg mx-auto dark:text-gray-200">
                 Portfolio
